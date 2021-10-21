@@ -1,8 +1,4 @@
 $(document).ready(function () {
-    // $("input#_regular_price").attr("min", 5000);
-    $.validator.addMethod("alphabetonly", function (value, element) {
-        return this.optional(element) || /^[a-z\s]+$/i.test(value);
-    }, "Only alphabetical characters");
     $('#myform').validate({
         rules: {
             name: {
